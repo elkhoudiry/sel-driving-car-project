@@ -37,11 +37,12 @@ def run():
             choice = int(strChoice)
 
             if choice == 1:
-                basic.startBasic("road2.mp4", utils.getSettingsJsonObject())
+                basic.startBasic(
+                    f'{assetsPath}/videos/road.mp4', utils.getSettingsJsonObject())
                 running = False
             elif choice == 2:
                 advanced.startAdvanced(
-                    f'{assetsPath}/videos/tokyo_road.mp4', utils.getSettingsJsonObject(), callback)
+                    f'{assetsPath}/videos/road.mp4', utils.getSettingsJsonObject(), callback)
                 running = False
             elif choice == 3:
                 server.startServer()
